@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Spin Backdrop</title>
+    <link rel="shortcut icon" type="image/png" href="images/ic_small.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/spin.min.backdrop.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $("#btn").click(function() {
+            setSpinner(true);
+            setTimeout(function() {
+                setSpinner(false);
+
+            }, 3000);
+        });
+    });
+    </script>
+</head>
+
+<body id="body">
+    <center>
+        <button id="btn" type="submit" class="btn btn-success btn-lg" style="
+    font-size:18pt;margin-top: 300px;">Click Me</button>
+    </center>
+</body>
+
+</html>
